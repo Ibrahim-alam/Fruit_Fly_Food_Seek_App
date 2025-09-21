@@ -14,11 +14,12 @@ class BootScene extends Phaser.Scene {
   }
 
   preload()  {
-    this.load.image('fly', 'assets/fly.png');
-    this.load.image('saltshaker', 'assets/saltshaker.png');
-    this.load.image('banana', 'assets/banana.png');
-    this.load.image('apple', 'assets/apple.png');
-    this.load.image('mango', 'assets/mango.png');
+    this.load.setPath('assets/');
+    this.load.image('fly', 'fly.png');
+    this.load.image('saltshaker', 'saltshaker.png');
+    this.load.image('banana', 'banana.png');
+    this.load.image('apple', 'apple.png');
+    this.load.image('mango', 'mango.png');
   }
 
   create () {
@@ -107,12 +108,13 @@ class MainScene extends Phaser.Scene {
   }
  
   preload()  {
-    this.load.image('fly', 'assets/fly.png');
-    this.load.image('tree', 'assets/tree.png');
-    this.load.image('stone', 'assets/stone.jpg');
-    this.load.image('bg', 'assets/table.jpg');
-    this.load.image('salt', 'assets/saltshaker.png');
-    this.load.image('mug', 'assets/mug.png');
+    this.load.setPath('assets/');
+    this.load.image('fly', 'fly.png');
+    this.load.image('tree', 'tree.png');
+    this.load.image('stone', 'stone.jpg');
+    this.load.image('bg', 'table.jpg');
+    this.load.image('salt', 'saltshaker.png');
+    this.load.image('mug', 'mug.png');
     let url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexvirtualjoystickplugin.min.js';
     this.load.plugin('rexvirtualjoystickplugin', url, true);
   }  
